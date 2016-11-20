@@ -49,6 +49,9 @@
         <object>objects\solid</object>
       </objects>
     </objects>
+    <object>objects\obj_rain</object>
+    <object>objects\obj_lighting</object>
+    <object>objects\object8</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
