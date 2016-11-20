@@ -5,13 +5,15 @@ var up = keyboard_check(vk_up);
 var down =keyboard_check(vk_down);
 var up_release = keyboard_check_released(vk_up);
 
+sprite_index = spr_bishop_idle;
+
 //Gravity engine
 if (!place_meeting(x, y+1, solid)) {
     vspd += grav;
 
    // Player is in the air
     //sprite_index = spr_bishop_jump;
-    //image_speed = 0;
+   // image_speed = 0;
     //image_index = (vspd > 0);
     
     // Control the jump height
@@ -60,23 +62,24 @@ move(solid);
 
 /// Grab check
 var falling = y-yprevious > 0;
-var wasnt_wall = !position_meeting(x+44*image_xscale, yprevious, solid);
-var is_wall = position_meeting(x+44*image_xscale, y, solid);
+var wasnt_wall = !position_meeting(x+445*image_xscale, yprevious, solid);
+var is_wall = position_meeting(x+445*image_xscale, y, solid);
 
 if (falling && wasnt_wall && is_wall) {
     hspd = 0;
     vspd = 0;
     
     // Move against the ledge
-}   while (!place_meeting(x+image_xscale, y, solid)) {
+    while (!place_meeting(x+image_xscale, y, solid)) {
         x+=image_xscale;
     }
     
     // Make sure we are the right height
-    while (position_meeting(x+44*image_xscale, y-1, solid)) {
+    while (position_meeting(x+445*image_xscale, y-1, solid)) {
         y-=1;
+    }
     
     sprite_index = spr_bishop_grab;
     state = grab_state;
-
+ 
 }
