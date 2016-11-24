@@ -5,22 +5,14 @@ var up = keyboard_check(vk_up);
 var down =keyboard_check(vk_down);
 var up_release = keyboard_check_released(vk_up);
 
-if (hspd == 0) {
-    sprite_index = spr_bishop_idle;
-//}  else {
-     //sprite_index = spr_bishop_walk;
-    // image_speed = .6;
-}
-//else { 
-    //sprite_index = spr_bishop_walk;
-//}
-
-
-
 //Gravity engine
 if (!place_meeting(x, y+1, solid)) {
     vspd += grav;
 
+    sprite_index = spr_bishop_jump;
+    image_speed = 0;
+    image_index = (vspd > 0);
+    
    //Player is in the air
    //sprite_index = spr_bishop_jump;
    // image_speed = 0;
@@ -36,6 +28,17 @@ if (!place_meeting(x, y+1, solid)) {
     // Jumping code
     if (up) {
         vspd = -16;
+    }
+    
+    //Player on ground
+    if (hspd == 0) {
+        sprite_index = spr_bishop_idle;
+        image_speed = 0;
+        image_index = (hspd > 0);
+    } else {
+        sprite_index = spr_bishop_walk;
+        image_speed = 0;
+        image_index = (1);
     }
 }
 
