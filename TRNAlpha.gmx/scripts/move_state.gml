@@ -5,6 +5,18 @@ var left = keyboard_check(vk_left);
 var up = keyboard_check(vk_up);
 var down =keyboard_check(vk_down);
 var up_release = keyboard_check_released(vk_up);
+
+//clever controller code
+//var gp_num = gamepad_get_device_count();
+//for (var i = 0; i < gp_num; i++;)
+   //if gamepad_is_connected(i) global.gp[i] = true else global.gp[i] = false; { 
+if (gamepad_is_connected(0)) {
+   right = gamepad_button_check(0, gp_padr);
+   left = gamepad_button_check(0, gp_padl)
+   up = gamepad_button_check(0, gp_face1);
+   down = gamepad_button_check(0, gp_padd);
+   up_release = gamepad_button_check_released(0, gp_face1);
+}
 //Gravity engine
 //sprite_index = spr_bishop_idle;
 if (!place_meeting(x, y+1, solid)) {
