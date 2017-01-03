@@ -12,6 +12,7 @@
       <sprite>sprites\spr_bishop_jump</sprite>
       <sprite>sprites\spr_bishop_grab</sprite>
       <sprite>sprites\spr_betablock</sprite>
+      <sprite>sprites\spr_deathbug</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprites name="Level 1">
@@ -21,6 +22,9 @@
         <sprite>sprites\spr_block_d</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_healthbar_border</sprite>
+    <sprite>sprites\spr_healthbar_inner</sprite>
+    <sprite>sprites\spr_healthbar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -55,6 +59,8 @@
     <object>objects\object9</object>
     <object>objects\object8</object>
     <object>objects\obj_alphablock</object>
+    <object>objects\obj_bishopstats</object>
+    <object>objects\obj_deathbug</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

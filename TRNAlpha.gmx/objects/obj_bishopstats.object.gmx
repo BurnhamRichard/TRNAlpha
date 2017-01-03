@@ -3,8 +3,8 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-999</depth>
-  <persistent>0</persistent>
+  <depth>-10000</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,14 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar light;
-light = surface_create(view_wview, view_hview); //creates a surface
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,36 +47,12 @@ light = surface_create(view_wview, view_hview); //creates a surface
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_set_target(light);
-draw_set_color(c_ltgray);//colour, if not dark enough
-draw_rectangle(0,0, view_wview, view_hview,false);
-surface_reset_target();  
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_blend_mode(bm_subtract);
-draw_surface(light,view_xview, view_yview); //draw light
-draw_set_blend_mode(bm_normal); 
-
+            <string>///Draw Bishop Stats
+draw_sprite(spr_healthbar, 1, view_xview[0] +46, view_yview[0]+34);
+draw_sprite_ext(spr_healthbar_inner, 1, view_xview[0] +46, view_yview[0]+34, obj_bishop.hp/100, 1, 0,c_white,1);
+draw_sprite(spr_healthbar_border, 1, view_xview[0]+15, view_yview[0]+15);
+//draw_text(32, 32, string(hp) + "/" + string(maxhp));
+draw_text(48, 48, "The signal is coming from somewhere near that mountain...");
 </string>
           </argument>
         </arguments>

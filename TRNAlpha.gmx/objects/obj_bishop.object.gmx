@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spd = 7;
+            <string>hp = 100;
+maxhp = hp;
+spd = 7;
 acc = 2;
 hspd = 0;
 vspd = 0;
@@ -85,6 +87,33 @@ draw_set_blend_mode(bm_normal);
             <kind>1</kind>
             <string>///Control Bishop State
 script_execute(state);
+if hp = 0 {
+instance_destroy();
+room_restart();  
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_deathbug">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hp = (hp -25) ;
 </string>
           </argument>
         </arguments>

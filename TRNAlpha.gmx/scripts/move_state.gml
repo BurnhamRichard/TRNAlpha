@@ -5,6 +5,7 @@ var left = keyboard_check(vk_left);
 var up = keyboard_check(vk_up);
 var down =keyboard_check(vk_down);
 var up_release = keyboard_check_released(vk_up);
+//var dash = keyboard_check_pressed(ord'C'));
 
 //clever controller code
 //var gp_num = gamepad_get_device_count();
@@ -16,6 +17,7 @@ if (gamepad_is_connected(0)) {
    up = gamepad_button_check(0, gp_face1);
    down = gamepad_button_check(0, gp_padd);
    up_release = gamepad_button_check_released(0, gp_face1);
+   //dash = gamepad_button_check_pressed(0, gp_face2);
 }
 //Gravity engine
 //sprite_index = spr_bishop_idle;
