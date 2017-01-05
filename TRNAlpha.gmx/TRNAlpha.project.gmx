@@ -6,15 +6,24 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="GUI">
+      <sprite>sprites\spr_healthbar_border</sprite>
+      <sprite>sprites\spr_healthbar_inner</sprite>
+      <sprite>sprites\spr_healthbar</sprite>
+      <sprite>sprites\spr_health1</sprite>
+      <sprite>sprites\spr_exp</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_deathbug</sprite>
+    </sprites>
     <sprites name="Bishop">
       <sprite>sprites\spr_bishop_idle</sprite>
       <sprite>sprites\spr_bishop_walk</sprite>
       <sprite>sprites\spr_bishop_jump</sprite>
       <sprite>sprites\spr_bishop_grab</sprite>
-      <sprite>sprites\spr_betablock</sprite>
-      <sprite>sprites\spr_deathbug</sprite>
     </sprites>
     <sprites name="Platforms">
+      <sprite>sprites\spr_betablock</sprite>
       <sprites name="Level 1">
         <sprite>sprites\spr_block_a</sprite>
         <sprite>sprites\spr_block_b</sprite>
@@ -22,9 +31,6 @@
         <sprite>sprites\spr_block_d</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\spr_healthbar_border</sprite>
-    <sprite>sprites\spr_healthbar_inner</sprite>
-    <sprite>sprites\spr_healthbar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -35,18 +41,28 @@
       <scripts name="Control Scripts">
         <script>scripts\move.gml</script>
       </scripts>
-      <script>scripts\move_state.gml</script>
-      <script>scripts\grab_state.gml</script>
-      <script>scripts\pause_state.gml</script>
+      <scripts name="States">
+        <script>scripts\pause_state.gml</script>
+        <script>scripts\grab_state.gml</script>
+        <script>scripts\move_state.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
   <objects name="objects">
-    <object>objects\obj_bishop</object>
+    <objects name="GUI">
+      <object>objects\obj_bishopstats</object>
+      <object>objects\obj_exp</object>
+      <object>objects\obj_rain</object>
+      <object>objects\obj_lighting</object>
+      <object>objects\lights</object>
+      <object>objects\obj_health1</object>
+    </objects>
     <objects name="Platforms">
       <objects name="Level 1">
+        <object>objects\obj_alphablock</object>
         <object>objects\obj_block_a</object>
         <object>objects\obj_block_b</object>
         <object>objects\obj_block_c</object>
@@ -54,13 +70,12 @@
         <object>objects\solid</object>
       </objects>
     </objects>
-    <object>objects\obj_rain</object>
-    <object>objects\obj_lighting</object>
-    <object>objects\object9</object>
-    <object>objects\object8</object>
-    <object>objects\obj_alphablock</object>
-    <object>objects\obj_bishopstats</object>
-    <object>objects\obj_deathbug</object>
+    <objects name="Bishop">
+      <object>objects\obj_bishop</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\obj_deathbug</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

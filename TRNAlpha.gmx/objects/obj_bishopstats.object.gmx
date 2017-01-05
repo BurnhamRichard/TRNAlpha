@@ -25,7 +25,46 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>///Beginplayerstats
+hp = 100;
+maxhp = hp;
+stamina = 10;
+maxstamin = stamina;
+expr = 0;
+maxexpr = 10; 
+level = 1;
+attack = 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///control stats
+if (hp &lt; 0) {
+hp = 0;
+}
+
+if (hp &gt;= maxhp) {
+hp = maxhp;
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -49,10 +88,11 @@
             <kind>1</kind>
             <string>///Draw Bishop Stats
 draw_sprite(spr_healthbar, 1, view_xview[0] +46, view_yview[0]+34);
-draw_sprite_ext(spr_healthbar_inner, 1, view_xview[0] +46, view_yview[0]+34, obj_bishop.hp/100, 1, 0,c_white,1);
+draw_sprite_ext(spr_healthbar_inner, 1, view_xview[0] +46, view_yview[0]+34, obj_bishopstats.hp/100, 1, 0,c_white,1);
 draw_sprite(spr_healthbar_border, 1, view_xview[0]+15, view_yview[0]+15);
 //draw_text(32, 32, string(hp) + "/" + string(maxhp));
-draw_text(48, 48, "The signal is coming from somewhere near that mountain...");
+draw_text(32, 32, string (obj_bishopstats.expr));
+draw_text(42, 42, string (obj_bishopstats.level));
 </string>
           </argument>
         </arguments>
