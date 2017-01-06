@@ -14,13 +14,15 @@
       <sprite>sprites\spr_exp</sprite>
     </sprites>
     <sprites name="Enemies">
-      <sprite>sprites\spr_deathbug</sprite>
+      <sprite>sprites\spr_gorgon_attack</sprite>
+      <sprite>sprites\spr_gorgon_idle</sprite>
     </sprites>
     <sprites name="Bishop">
       <sprite>sprites\spr_bishop_idle</sprite>
       <sprite>sprites\spr_bishop_walk</sprite>
       <sprite>sprites\spr_bishop_jump</sprite>
       <sprite>sprites\spr_bishop_grab</sprite>
+      <sprite>sprites\spr_bishop_attack</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprite>sprites\spr_betablock</sprite>
@@ -57,7 +59,7 @@
       <object>objects\obj_exp</object>
       <object>objects\obj_rain</object>
       <object>objects\obj_lighting</object>
-      <object>objects\lights</object>
+      <object>objects\object9</object>
       <object>objects\obj_health1</object>
     </objects>
     <objects name="Platforms">

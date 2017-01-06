@@ -48,7 +48,8 @@ if (left) {
 }
 
 if (hspd != 0) {
-    image_xscale = sign(hspd)*.1;
+    image_xscale = sign(hspd);
+    //image_xscale = sign(hspd)*.1;
     //sprite_index = spr_bishop_idle;
     //currently timsing the xscale by 1, consider resizing sprites if possible.
 }
@@ -62,8 +63,10 @@ move(solid);
 
 /// Grab check
 var falling = y-yprevious > 0;
-var wasnt_wall = !position_meeting(x+445*image_xscale, yprevious, solid);
-var is_wall = position_meeting(x+445*image_xscale, y, solid);
+var wasnt_wall = !position_meeting(x+44*image_xscale, yprevious, solid);
+var is_wall = position_meeting(x+44*image_xscale, y, solid);
+//var wasnt_wall = !position_meeting(x+445*image_xscale, yprevious, solid);
+//var is_wall = position_meeting(x+445*image_xscale, y, solid);
 
 if (falling && wasnt_wall && is_wall) {
     hspd = 0;
@@ -75,7 +78,8 @@ if (falling && wasnt_wall && is_wall) {
     }
     
     // Make sure we are the right height
-    while (position_meeting(x+445*image_xscale, y-1, solid)) {
+    //while (position_meeting(x+445*image_xscale, y-1, solid)) {
+    while (position_meeting(x+44*image_xscale, y-1, solid)) {
         y-=1;
     }
     
