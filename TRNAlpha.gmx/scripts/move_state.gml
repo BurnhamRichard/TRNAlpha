@@ -5,6 +5,7 @@ var left = keyboard_check(vk_left);
 var up = keyboard_check(vk_up);
 var down =keyboard_check(vk_down);
 var up_release = keyboard_check_released(vk_up);
+var space = keyboard_check(vk_space);
 //var dash = keyboard_check_pressed(ord'C'));
 
 //clever controller code
@@ -86,4 +87,12 @@ if (falling && wasnt_wall && is_wall) {
     sprite_index = spr_bishop_grab;
     state = grab_state;
     }
-
+if (space) {
+    if (melee = true) {
+    state = attack_state_melee;
+    }
+    
+    if (gun = true) {
+    state = attack_state_gun;
+    }
+} 

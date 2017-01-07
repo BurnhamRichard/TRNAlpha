@@ -12,6 +12,11 @@
       <sprite>sprites\spr_healthbar</sprite>
       <sprite>sprites\spr_health1</sprite>
       <sprite>sprites\spr_exp</sprite>
+      <sprites name="Weapons">
+        <sprite>sprites\spr_bishop_sabre</sprite>
+        <sprite>sprites\spr_bishop_basicsword</sprite>
+        <sprite>sprites\spr_hitbox_sword</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_gorgon_attack</sprite>
@@ -47,6 +52,7 @@
         <script>scripts\pause_state.gml</script>
         <script>scripts\grab_state.gml</script>
         <script>scripts\move_state.gml</script>
+        <script>scripts\attack_state_melee.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -77,6 +83,9 @@
     </objects>
     <objects name="Enemies">
       <object>objects\obj_deathbug</object>
+    </objects>
+    <objects name="Weapons">
+      <object>objects\obj_hitbox</object>
     </objects>
   </objects>
   <rooms name="rooms">
