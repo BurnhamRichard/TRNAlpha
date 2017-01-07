@@ -24,6 +24,7 @@ if (gamepad_is_connected(0)) {
 //sprite_index = spr_bishop_idle;
 if (!place_meeting(x, y+1, solid)) {
     vspd += grav;
+    sprite_index = spr_bishop_jump;
 if (up_release && vspd < -6) {
     vspd = -6;
     }

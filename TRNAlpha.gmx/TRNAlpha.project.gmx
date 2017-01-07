@@ -17,6 +17,9 @@
         <sprite>sprites\spr_bishop_basicsword</sprite>
         <sprite>sprites\spr_hitbox_sword</sprite>
       </sprites>
+      <sprite>sprites\spr_GUI</sprite>
+      <sprite>sprites\spr_hpbar</sprite>
+      <sprite>sprites\spr_expbar</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_gorgon_attack</sprite>
@@ -55,6 +58,12 @@
         <script>scripts\attack_state_melee.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Enemy Scripts">
+      <script>scripts\gorgon_flight_chase_state.gml</script>
+      <script>scripts\gorgon_move_right.gml</script>
+      <script>scripts\gorgon_move_left.gml</script>
+      <script>scripts\gorgon_flight_idle_state.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
@@ -67,6 +76,7 @@
       <object>objects\obj_lighting</object>
       <object>objects\object9</object>
       <object>objects\obj_health1</object>
+      <object>objects\obj_gui</object>
     </objects>
     <objects name="Platforms">
       <objects name="Level 1">
@@ -82,6 +92,7 @@
       <object>objects\obj_bishop</object>
     </objects>
     <objects name="Enemies">
+      <object>objects\obj_gorgon_flight</object>
       <object>objects\obj_deathbug</object>
     </objects>
     <objects name="Weapons">
