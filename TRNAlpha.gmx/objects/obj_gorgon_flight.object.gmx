@@ -27,9 +27,9 @@
             <kind>1</kind>
             <string>/// Flight mode
 
-//hspd = 0;
-//vspd = 0;
-spd = 0;
+hspd = 0;
+vspd = 0;
+spd = 5;
 hp = 2; 
 
 state = gorgon_flight_idle_state;
