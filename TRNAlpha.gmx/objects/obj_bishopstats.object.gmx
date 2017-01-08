@@ -80,24 +80,33 @@ hp = maxhp;
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Draw Bishop Stats
-//draw_sprite(spr_healthbar, 1, view_xview[0] +46, view_yview[0]+34);
-//draw_sprite_ext(spr_healthbar_inner, 1, view_xview[0] +46, view_yview[0]+34, obj_bishopstats.hp/100, 1, 0,c_white,1);
-//draw_sprite(spr_healthbar_border, 1, view_xview[0]+15, view_yview[0]+15);
+            <string>display_set_gui_size(1920,1080);
+draw_sprite(spr_GUI, image_index, 960, 540);
+//draw_sprite(spr_hpbar, image_index, 1372, 66.5);
+draw_sprite_ext(spr_hpbar, image_index, 1372, 66.5, hp/100, 1, 0,c_white,1);
+draw_sprite(spr_expbar, image_index, 1372, 96.5);
+draw_sprite(spr_yellowshield, image_index, 906, 79);
+draw_sprite(spr_weapondisplay_sword, image_index, 1023, 80);
+draw_text(32, 32, hp);
+draw_sprite(spr_stabletimezone, image_index, 1663.4, 853.39);
+draw_sprite(spr_352ad, image_index, 1671, 936.46);
+draw_sprite(spr_omegasystem, image_index, 1664.78, 1003.8);
+draw_sprite(spr_level1, image_index, 1770.53, 73.47); 
+//Future ideas
+//display_set_gui_size(1920,1080);
+//draw_sprite(spr_HUD, image_index, 960, 540);
+//draw_sprite(spr_HPBar, image_index, 1372, 66.5);
+//draw_sprite(spr_EXPBar, image_index, 1372, 96.5);
+//draw_sprite(currentpowerup, image_index, 906, 79);
+//draw_sprite(currentweapon, image_index, 1023, 80);
+//Everything is set to 1920x1080
 
-draw_sprite(spr_hpbar, 1, view_xview[0] +925, view_yview[0]+32);
-
-
-//draw_text(32, 32, string(hp) + "/" + string(maxhp));
-//LEVELS//draw_text(32, 32, string (obj_bishopstats.expr));
-//LVELS//draw_text(42, 42, string (obj_bishopstats.level));
-//draw_sprite(spr_GUI, -1, 0, 0);
 </string>
           </argument>
         </arguments>

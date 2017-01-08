@@ -6,20 +6,25 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\spr_352ad</sprite>
     <sprites name="GUI">
-      <sprite>sprites\spr_healthbar_border</sprite>
-      <sprite>sprites\spr_healthbar_inner</sprite>
-      <sprite>sprites\spr_healthbar</sprite>
       <sprite>sprites\spr_health1</sprite>
+      <sprite>sprites\spr_expbar</sprite>
+      <sprite>sprites\spr_yellowshield</sprite>
+      <sprite>sprites\spr_weapondisplay_sword</sprite>
+      <sprite>sprites\spr_hpbar</sprite>
+      <sprite>sprites\spr_GUI</sprite>
       <sprite>sprites\spr_exp</sprite>
       <sprites name="Weapons">
         <sprite>sprites\spr_bishop_sabre</sprite>
         <sprite>sprites\spr_bishop_basicsword</sprite>
         <sprite>sprites\spr_hitbox_sword</sprite>
+        <sprite>sprites\spr_omegasystem</sprite>
       </sprites>
-      <sprite>sprites\spr_GUI</sprite>
-      <sprite>sprites\spr_hpbar</sprite>
-      <sprite>sprites\spr_expbar</sprite>
+      <sprite>sprites\spr_stabletimezone</sprite>
+      <sprite>sprites\spr_bishoptalking</sprite>
+      <sprite>sprites\spr_level1</sprite>
+      <sprite>sprites\spr_redshield</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_gorgon_attack</sprite>
@@ -76,7 +81,6 @@
       <object>objects\obj_lighting</object>
       <object>objects\object9</object>
       <object>objects\obj_health1</object>
-      <object>objects\obj_gui</object>
     </objects>
     <objects name="Platforms">
       <objects name="Level 1">

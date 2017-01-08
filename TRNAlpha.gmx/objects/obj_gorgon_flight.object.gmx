@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>/// Flight mode
 
-hspd = 0;
-vspd = 0;
+//hspd = 0;
+//vspd = 0;
 spd = 0;
 hp = 2; 
 

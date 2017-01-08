@@ -59,12 +59,12 @@ gun = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>size = 128; //size of light
-draw_set_blend_mode(bm_subtract);
-surface_set_target(light);
-draw_ellipse_color(x-size /2 - view_xview,y-size/2-view_yview,x+size/2-view_xview,y+size/2-view_yview, c_blue, c_black, false);
-surface_reset_target();
-draw_set_blend_mode(bm_normal);
+            <string>//size = 128; //size of light
+//draw_set_blend_mode(bm_subtract);
+//surface_set_target(light);
+//draw_ellipse_color(x-size /2 - view_xview,y-size/2-view_yview,x+size/2-view_xview,y+size/2-view_yview, c_blue, c_black, false);
+//surface_reset_target();
+//draw_set_blend_mode(bm_normal);
 </string>
           </argument>
         </arguments>
@@ -99,7 +99,7 @@ room_restart();
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_deathbug">
+    <event eventtype="4" ename="obj_gorgon_flight">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -116,8 +116,9 @@ room_restart();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_bishopstats) {
-    hp += -25;
+            <string>with (other) instance_destroy();
+with (obj_bishopstats) {
+        hp -= 5;             
 }
 </string>
           </argument>
