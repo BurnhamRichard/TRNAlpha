@@ -1,7 +1,11 @@
 sprite_index = spr_bishop_jump;
 image_blend = c_red;
 
-if (hspd != 0) image_xscale = sign(hspd);
+if (hspd != 0) {
+
+image_xscale = sign(hspd);
+
+}
 
 // Apply gravity
 if (!place_meeting(x, y+1, solid)) {
@@ -13,7 +17,7 @@ if (!place_meeting(x, y+1, solid)) {
     apply_friction(spd);
 }
 
-//direction_move_bounce(solid);
+direction_move_bounce(solid);
 
 // Change back to the move state
 if (hspd == 0 && vspd == 0) {

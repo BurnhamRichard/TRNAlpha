@@ -60,6 +60,8 @@
         <script>scripts\move.gml</script>
         <script>scripts\approach.gml</script>
         <script>scripts\apply_friction.gml</script>
+        <script>scripts\direction_move_bounce.gml</script>
+        <script>scripts\horizontal_move_bounce.gml</script>
       </scripts>
       <scripts name="States">
         <script>scripts\pause_state.gml</script>
