@@ -87,7 +87,7 @@ hp = maxhp;
           <argument>
             <kind>1</kind>
             <string>display_set_gui_size(1920,1080);
-draw_sprite(spr_HUDV2, image_index, 960, 540);
+draw_sprite(spr_HUD, image_index, 960, 540);
 draw_sprite(spr_redshield, image_index, 1238, 46.5);
 draw_sprite_ext(spr_hpbar, image_index, 1565, 37.5, hp/100, 1, 0,c_white,1);
 draw_sprite(spr_expbar, image_index, 1565, 58.50);

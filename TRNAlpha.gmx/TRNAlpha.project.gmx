@@ -36,6 +36,7 @@
       <sprite>sprites\spr_bishop_jump</sprite>
       <sprite>sprites\spr_bishop_grab</sprite>
       <sprite>sprites\spr_bishop_attack</sprite>
+      <sprite>sprites\sprite31</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprite>sprites\spr_betablock</sprite>
@@ -49,6 +50,7 @@
     <sprite>sprites\spr_HUDV2</sprite>
     <sprite>sprites\spr_omegasystem2</sprite>
     <sprite>sprites\sprite30</sprite>
+    <sprite>sprites\spr_HUD</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
