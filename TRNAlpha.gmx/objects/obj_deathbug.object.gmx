@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Initialise the gorgon
+image_xscale = .5;
+image_yscale = .5;
 state = gorgon_move_right;
 </string>
           </argument>

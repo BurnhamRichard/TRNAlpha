@@ -92,7 +92,12 @@ draw_sprite(spr_redshield, image_index, 1238, 46.5);
 draw_sprite_ext(spr_hpbar, image_index, 1565, 37.5, hp/100, 1, 0,c_white,1);
 draw_sprite(spr_expbar, image_index, 1565, 58.50);
 draw_sprite(spr_weapondisplay_sword, image_index, 1320.50, 47);
-
+draw_sprite(spr_352ad, image_index, 1763.74, 973.94);
+draw_sprite(spr_stabletimezone, image_index, 1755.41, 914.66);
+draw_sprite(spr_omegasystem2, image_index, 1761.37, 1026.18);
+if (instance_exists(obj_gorgon_flight)) {
+draw_text(x, y, obj_gorgon_flight.hp);
+}
 //draw_sprite(spr_hpbar, image_index, 1372, 66.5);
 //============
 //draw_sprite_ext(spr_hpbar, image_index, 1372, 66.5, hp/100, 1, 0,c_white,1);

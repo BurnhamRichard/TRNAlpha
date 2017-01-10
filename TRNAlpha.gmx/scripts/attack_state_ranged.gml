@@ -1,22 +1,13 @@
 ///attack_state
 
-sprite_index = spr_bishop_attack;
-vspd += grav;
-hspd = approach(hspd, 0, 2);
-//consider writing an approach script here
-//hspd = -6;
-move(solid);
+//instance_create 
 
-if (image_index >14) && (image_index <=15) { 
-    instance_create(x, y, obj_hitbox);
-} 
-    
+sprite_index = spr_bishop_attack;
+
+if (image_index >10) && (image_index <=15)
+    { instance_create(x, y, obj_hitbox);
     //image_xscale = sign(hspd);
-    
-    //}
-    //if (hspd != 0) {
-        //obj_hitbox.image_xscale = (sign)hspd ;    
-    //
+    }
         //with(instance_create(x,y,obj_hitbox))
         //{
             //image_xscale = other.image_xscale;

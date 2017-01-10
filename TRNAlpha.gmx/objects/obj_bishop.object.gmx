@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//hp = 100;
 //maxhp = hp;
-spd = 7;
+spd = 15;
 acc = 2;
 hspd = 0;
 vspd = 0;
@@ -116,10 +116,11 @@ room_restart();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (other) instance_destroy();
-with (obj_bishopstats) {
-        hp -= 5;             
+            <string>state = hurt_state;
+with(obj_gorgon_flight) {
+instance_destroy();
 }
+
 </string>
           </argument>
         </arguments>

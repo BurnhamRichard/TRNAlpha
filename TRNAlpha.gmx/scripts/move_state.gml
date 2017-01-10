@@ -20,11 +20,11 @@ if (gamepad_is_connected(0)) {
    up_release = gamepad_button_check_released(0, gp_face1);
    //dash = gamepad_button_check_pressed(0, gp_face2);
 }
+image_blend = c_white;
 //Gravity engine
 //sprite_index = spr_bishop_idle;
 if (!place_meeting(x, y+1, solid)) {
     vspd += grav;
-    sprite_index = spr_bishop_jump;
 if (up_release && vspd < -6) {
     vspd = -6;
     }

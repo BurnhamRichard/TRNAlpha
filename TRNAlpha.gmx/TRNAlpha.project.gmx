@@ -47,6 +47,8 @@
       </sprites>
     </sprites>
     <sprite>sprites\spr_HUDV2</sprite>
+    <sprite>sprites\spr_omegasystem2</sprite>
+    <sprite>sprites\sprite30</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -56,12 +58,16 @@
     <scripts name="States">
       <scripts name="Control Scripts">
         <script>scripts\move.gml</script>
+        <script>scripts\approach.gml</script>
+        <script>scripts\apply_friction.gml</script>
       </scripts>
       <scripts name="States">
         <script>scripts\pause_state.gml</script>
         <script>scripts\grab_state.gml</script>
         <script>scripts\move_state.gml</script>
         <script>scripts\attack_state_melee.gml</script>
+        <script>scripts\attack_state_ranged.gml</script>
+        <script>scripts\hurt_state.gml</script>
       </scripts>
     </scripts>
     <scripts name="Enemy Scripts">

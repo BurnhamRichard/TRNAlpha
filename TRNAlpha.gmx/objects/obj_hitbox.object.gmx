@@ -8,6 +8,75 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//hspd = obj_bishop.hspd;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_gorgon_flight">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>other.hp += -3;
+//if (hspd != 0) {
+//image_xscale = sign(hspd);
+
+//vspd = -3;
+//hspd = sign(x - other.x) *4;
+//image_xscale = sign(hspd);
+
+//if (obj_bishop.hspd !=0) {
+    //hspd = sign(x - other.x) *4;
+    //image_xscale = sign(hspd);
+    //}
+//}
+    //}
+//}
+//image_xscale - sign(hspd);
+
+                //if (hit == 0);
+                //{
+                //hit = 1;
+                //vspd = -3;
+                //hspd = sign(x - other.x) *4;
+                //image_xscale = sign(hspd); 
+                //hspd = sign(x - other.x) *4;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="77">
       <action>
         <libid>1</libid>

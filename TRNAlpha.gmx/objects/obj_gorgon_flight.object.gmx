@@ -26,11 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Flight mode
-
+hp = 6;
 hspd = 0;
 vspd = 0;
 spd = 5;
-hp = 2; 
+ 
 
 state = gorgon_flight_idle_state;
 
@@ -59,6 +59,10 @@ sight = 180;
           <argument>
             <kind>1</kind>
             <string>script_execute(state);
+if (hp &lt;= 0) {
+    instance_destroy();
+}
+
 </string>
           </argument>
         </arguments>
