@@ -1,13 +1,30 @@
 ///attack_state
 
 //instance_create 
+vspd += grav;
+hspd = approach(hspd, 0, 2);
+//consider writing an approach script here
+//hspd = -6;
+move(solid);
+sprite_index = spr_attack_ranged;
+//put alarm shiz here
+if (alarm[0] = -1) {
+alarm = 5;
+}
 
-sprite_index = spr_bishop_attack;
+if (canshoot = true) {
+instance_create(x, y, obj_bullet);
+canshoot = false;
+}
+alarm[0] = 5; 
 
-if (image_index >10) && (image_index <=15)
-    { instance_create(x, y, obj_hitbox);
+//instance_create(110, 67, obj_bullet);
+
+
+//if (image_index >10) && (image_index <=15)
+    //{ instance_create(x, y, obj_hitbox);
     //image_xscale = sign(hspd);
-    }
+    //}
         //with(instance_create(x,y,obj_hitbox))
         //{
             //image_xscale = other.image_xscale;

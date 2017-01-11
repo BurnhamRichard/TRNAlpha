@@ -87,16 +87,21 @@ hp = maxhp;
           <argument>
             <kind>1</kind>
             <string>display_set_gui_size(1920,1080);
-draw_sprite(spr_HUD, image_index, 960, 540);
+draw_sprite(spr_HUDV2, image_index, 960, 540);
 draw_sprite(spr_redshield, image_index, 1238, 46.5);
 draw_sprite_ext(spr_hpbar, image_index, 1565, 37.5, hp/100, 1, 0,c_white,1);
 draw_sprite(spr_expbar, image_index, 1565, 58.50);
-draw_sprite(spr_weapondisplay_sword, image_index, 1320.50, 47);
+if obj_bishop.melee = true {
+draw_sprite(spr_weapondisplay_sword, image_index, 1320.50, 47); 
+} 
+if obj_bishop.gun = true {
+draw_sprite(spr_redshield, image_index, 1320.50, 47); 
+}
 draw_sprite(spr_352ad, image_index, 1763.74, 973.94);
 draw_sprite(spr_stabletimezone, image_index, 1755.41, 914.66);
 draw_sprite(spr_omegasystem2, image_index, 1761.37, 1026.18);
 if (instance_exists(obj_gorgon_flight)) {
-draw_text(x, y, obj_gorgon_flight.hp);
+draw_text(x, y, obj_bishop.weaponselect);
 }
 //draw_sprite(spr_hpbar, image_index, 1372, 66.5);
 //============
