@@ -72,6 +72,7 @@
         <script>scripts\attack_state_melee.gml</script>
         <script>scripts\attack_state_ranged.gml</script>
         <script>scripts\hurt_state.gml</script>
+        <script>scripts\exp_state.gml</script>
       </scripts>
     </scripts>
     <scripts name="Enemy Scripts">

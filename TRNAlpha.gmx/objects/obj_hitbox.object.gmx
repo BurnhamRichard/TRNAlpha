@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_hitbox_sword</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>//hspd = obj_bishop.hspd;
+if (obj_bishop.image_xscale = -1) {
+image_xscale = -1;
+} 
 </string>
           </argument>
         </arguments>
