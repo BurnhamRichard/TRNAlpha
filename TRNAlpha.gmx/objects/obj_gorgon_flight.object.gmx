@@ -26,10 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>/// Flight mode
-hp = 6;
+hp = 100;
 hspd = 0;
 vspd = 0;
 spd = 5;
+level = 1;
  
 
 state = gorgon_flight_idle_state;
@@ -63,6 +64,31 @@ if (hp &lt;= 0) {
     instance_destroy();
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_healthbar(x, y, x+50, y+6, obj_gorgon_flight.hp ,c_gray, c_orange,c_blue,0,true,true);
+draw_text(x+55, y+6, level);
 </string>
           </argument>
         </arguments>
