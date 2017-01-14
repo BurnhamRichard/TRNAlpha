@@ -25,6 +25,7 @@
       <sprite>sprites\spr_level1</sprite>
       <sprite>sprites\spr_redshield</sprite>
       <sprite>sprites\spr_352ad</sprite>
+      <sprite>sprites\spr_redlaser</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_gorgon_attack</sprite>
@@ -72,6 +73,8 @@
         <script>scripts\attack_state_melee.gml</script>
         <script>scripts\attack_state_ranged.gml</script>
         <script>scripts\hurt_state.gml</script>
+        <script>scripts\hurt_state_laser.gml</script>
+        <script>scripts\hurt_state_laser_projectile.gml</script>
         <script>scripts\exp_state.gml</script>
       </scripts>
     </scripts>
@@ -94,6 +97,7 @@
       <object>objects\object9</object>
       <object>objects\obj_health1</object>
       <object>objects\obj_bullet</object>
+      <object>objects\obj_redlaser</object>
     </objects>
     <objects name="Platforms">
       <objects name="Level 1">

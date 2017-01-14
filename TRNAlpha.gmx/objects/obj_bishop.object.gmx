@@ -37,6 +37,9 @@ melee = false;
 gun = true;
 canshoot = true;
 weaponselect = 1; 
+redshield = false;
+powerselect = 1;
+maxpowerselect = 2;
 //image_xscale =.1;
 //image_yscale =.1;
 </string>
@@ -119,6 +122,7 @@ if obj_bishopstats.hp &lt;= 0 {
 //instance_destroy();
 room_restart();  
 }
+//Weapon Selection Control
 if (weaponselect = 1) {
     melee = false;
     gun = true;
@@ -132,7 +136,58 @@ if (weaponselect = 2) {
 if (weaponselect &gt; 2) {
     weaponselect = 1;
 }
+//Power Selection Control
+if (powerselect &gt; maxpowerselect) {
+    powerselect = 1;
+}
+//Power Selection Control 2
+if (powerselect = 1) {
+    redshield = true;
+} else { 
+    redshield = false; 
+}
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_redlaser">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+//obj_bishopstats.hp -= 10;
+//hspd = -16;
+//vspd = -16;
+//state = hurt_state_laser;
+//}
+
+//if (redshield = false) and (image_xscale) {
+//hspd = -16;
+//image_xscale = -1;
+//state = hurt_state_laser;
+if (redshield = false) {// and (image_xscale = -1) {
+hspd = -16;
+state = hurt_state_laser;
+}
+//if (redshield = false) and (image_xscale = -1) {
+//hspd = 32;
+//state = hurt_state_laser;
+//}
 </string>
           </argument>
         </arguments>

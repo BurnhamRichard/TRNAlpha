@@ -32,7 +32,7 @@ vspd = 0;
 hspd = 15;
 vspd = 0;
 } 
-
+state = 0;
 //hspd = 5;
 //vspd = 5;
 image_angle = .1;
@@ -68,6 +68,31 @@ move(solid);
 if (hspd = 0) {
 instance_destroy();
 }
+//script_execute(state);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_redlaser">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hspd = -16;
+vspd = choose(-16, 16);
 </string>
           </argument>
         </arguments>
