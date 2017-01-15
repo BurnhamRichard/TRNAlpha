@@ -117,7 +117,9 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_healthbar(x, y, x+50, y+6, hp, c_gray, c_orange,c_blue,0,true,true);
+//draw_healthbar(x, y, x+50, y+6, hp, c_gray, c_orange,c_blue,0,true,true);
+draw_sprite(spr_enemyhud, 1, x+117, y-44);
+//draw_sprite(spr_enemyhud, 1, x+121, y-32);
 //draw_text(x+55, y+6, level);
 </string>
           </argument>

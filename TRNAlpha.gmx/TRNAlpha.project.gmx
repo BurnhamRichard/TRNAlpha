@@ -52,6 +52,8 @@
     <sprite>sprites\spr_omegasystem2</sprite>
     <sprite>sprites\sprite30</sprite>
     <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_requiemgate</sprite>
+    <sprite>sprites\spr_enemyhud</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -118,6 +120,9 @@
     </objects>
     <objects name="Weapons">
       <object>objects\obj_hitbox</object>
+    </objects>
+    <objects name="Gates">
+      <object>objects\obj_requiemgate</object>
     </objects>
   </objects>
   <rooms name="rooms">
