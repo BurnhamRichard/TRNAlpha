@@ -27,10 +27,10 @@
             <kind>1</kind>
             <string>/// Flight mode
 hp = 100;
+level = 1;
 hspd = 0;
 vspd = 0;
 spd = 5;
-level = 1;
  
 
 state = gorgon_flight_idle_state;
@@ -60,6 +60,8 @@ sight = 180;
           <argument>
             <kind>1</kind>
             <string>script_execute(state);
+
+
 if (hp &lt;= 0) {
     instance_destroy();
     choose(instance_create(x, y, obj_exp), (instance_create(x, y, obj_health1)), (instance_create(x, y, obj_exp)));
@@ -115,8 +117,8 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_healthbar(x, y, x+126, y+21, hp ,c_gray, c_orange,c_blue,0,true,true);
-draw_text(x+55, y+6, level);
+draw_healthbar(x, y, x+50, y+6, hp, c_gray, c_orange,c_blue,0,true,true);
+//draw_text(x+55, y+6, level);
 </string>
           </argument>
         </arguments>
