@@ -47,6 +47,9 @@
         <sprite>sprites\spr_block_c</sprite>
         <sprite>sprites\spr_block_d</sprite>
       </sprites>
+      <sprites name="V2">
+        <sprite>sprites\sprite36</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_HUDV2</sprite>
     <sprite>sprites\spr_omegasystem2</sprite>
@@ -54,6 +57,13 @@
     <sprite>sprites\spr_bullet</sprite>
     <sprite>sprites\spr_requiemgate</sprite>
     <sprite>sprites\spr_enemyhud</sprite>
+    <sprite>sprites\spr_block_1_1</sprite>
+    <sprite>sprites\spr_block_1_2</sprite>
+    <sprite>sprites\spr_block_1_3</sprite>
+    <sprite>sprites\spr_block_1_4</sprite>
+    <sprite>sprites\spr_test</sprite>
+    <sprite>sprites\spr_upright</sprite>
+    <sprite>sprites\spr_bishop_redshield</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -109,6 +119,8 @@
         <object>objects\obj_block_c</object>
         <object>objects\obj_block_d</object>
         <object>objects\solid</object>
+        <object>objects\spr_intersection</object>
+        <object>objects\object20</object>
       </objects>
     </objects>
     <objects name="Bishop">

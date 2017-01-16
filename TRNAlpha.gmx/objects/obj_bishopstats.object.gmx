@@ -91,6 +91,7 @@ draw_sprite(spr_HUDV2, image_index, 960, 540);
 //Power Select
 if (obj_bishop.powerselect = 1) {
 draw_sprite(spr_redshield, image_index, 1238, 46.5);
+//draw_sprite(spr_bishop_redshield, image_index, obj_bishop.x+69.11, obj_bishop.y+77.40);
 }
 
 if (obj_bishop.powerselect = 2) {
