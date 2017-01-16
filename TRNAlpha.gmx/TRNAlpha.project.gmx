@@ -38,6 +38,7 @@
       <sprite>sprites\spr_bishop_grab</sprite>
       <sprite>sprites\spr_bishop_attack</sprite>
       <sprite>sprites\spr_attack_ranged</sprite>
+      <sprite>sprites\spr_bishop_story</sprite>
     </sprites>
     <sprites name="Platforms">
       <sprite>sprites\spr_betablock</sprite>
@@ -64,6 +65,7 @@
     <sprite>sprites\spr_test</sprite>
     <sprite>sprites\spr_upright</sprite>
     <sprite>sprites\spr_bishop_redshield</sprite>
+    <sprite>sprites\sprite44</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -96,10 +98,16 @@
       <script>scripts\gorgon_move_left.gml</script>
       <script>scripts\gorgon_flight_idle_state.gml</script>
     </scripts>
+    <scripts name="Story">
+      <script>scripts\scr_text.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\fnt1</font>
+  </fonts>
   <objects name="objects">
     <objects name="GUI">
       <object>objects\obj_bishopstats</object>
@@ -136,6 +144,9 @@
     <objects name="Gates">
       <object>objects\obj_requiemgate</object>
     </objects>
+    <object>objects\obj_text_generator</object>
+    <object>objects\obj_text_spawn</object>
+    <object>objects\obj_bishop_story</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
