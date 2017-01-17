@@ -31,7 +31,7 @@ spd = 15;
 acc = 2;
 hspd = 0;
 vspd = 0;
-grav = 1.5;
+grav = 1.2;
 state = move_state;
 melee = false;
 gun = true;
@@ -317,6 +317,30 @@ with (obj_bishopstats) {
           <argument>
             <kind>1</kind>
             <string>game_restart();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//scr_text("It's a shame she won't live. But then again, who does?", 1, 500, 500); 
+
 </string>
           </argument>
         </arguments>

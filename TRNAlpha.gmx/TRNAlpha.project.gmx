@@ -66,6 +66,7 @@
     <sprite>sprites\spr_upright</sprite>
     <sprite>sprites\spr_bishop_redshield</sprite>
     <sprite>sprites\sprite44</sprite>
+    <sprite>sprites\sprite46</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -144,9 +145,9 @@
     <objects name="Gates">
       <object>objects\obj_requiemgate</object>
     </objects>
-    <object>objects\obj_text_generator</object>
-    <object>objects\obj_text_spawn</object>
     <object>objects\obj_bishop_story</object>
+    <object>objects\obj_text</object>
+    <object>objects\obj_spawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

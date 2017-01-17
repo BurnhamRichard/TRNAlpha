@@ -117,6 +117,17 @@ draw_sprite(spr_omegasystem2, image_index, 1761.37, 1026.18);
 if (instance_exists(obj_gorgon_flight)) {
 draw_text(x, y, obj_bishop.weaponselect);
 }
+//}
+
+
+    //var str;
+   // str = "What are the odds this is going to work?";
+    //scr_text(str, 0.5, 100, 100);
+//}    
+
+
+
+
 //draw_sprite(spr_hpbar, image_index, 1372, 66.5);
 //============
 //draw_sprite_ext(spr_hpbar, image_index, 1372, 66.5, hp/100, 1, 0,c_white,1);
@@ -137,6 +148,36 @@ draw_text(x, y, obj_bishop.weaponselect);
 //draw_sprite(currentweapon, image_index, 1023, 80);
 //Everything is set to 1920x1080
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Storycontrol
+if (obj_bishop.storytext = 1) {
+    scr_text("It's a shame she won't live. But then again, who does?", 1, 500, 500);
+    //draw_text(obj_bishop.x, obj_bishop.y, "It's a shame she won't live. But then again, who does?");
+}
+///Storycontrol
+if (obj_bishop.storytext = 2) {
+    scr_text("This world... It's so full of darkness. And pain. I wonder how it got to be like this?", 1, 500, 500);
+    //draw_text(obj_bishop.x, obj_bishop.y, "It's a shame she won't live. But then again, who does?");
+}
 </string>
           </argument>
         </arguments>

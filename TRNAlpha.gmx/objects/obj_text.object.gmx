@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-999</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,14 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar light;
-light = surface_create(view_wview[1], view_hview[1]); //creates a surface
+            <string>alpha = 0;
+print = "";
+time = 0;
+depth = depth - instance_number(obj_text);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,36 +51,55 @@ light = surface_create(view_wview[1], view_hview[1]); //creates a surface
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_set_target(light);
-draw_set_color(c_ltgray);//colour, if not dark enough
-draw_rectangle(0,0, view_wview, view_hview,false);
-surface_reset_target();  
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_blend_mode(bm_subtract);
-draw_surface(light,view_xview, view_yview); //draw light
-draw_set_blend_mode(bm_normal); 
+            <string>///Render textbox &amp; text
+draw_set_alpha(alpha);
+if (alpha &lt; 1) alpha += spd/10; else alpha = 1;
 
+//draw_set_font(font);
+//draw_set_color(c_gray);
+//draw_rectangle(x,y,x+boxwidth,y+boxheight,0);
+//draw_set_color(c_black);
+//draw_rectangle(x,y,x+boxwidth,y+boxheight,1);
+
+draw_set_color(c_white);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_text_ext
+(
+    x + padding,
+    y + padding,
+    print,
+    font_size+(font_size/2),
+    maxlength
+);
+
+draw_set_alpha(1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Add letters over time
+if (time &lt; text_length)
+{
+    time += spd;
+    print = string_copy(text,0,time)
+}
 </string>
           </argument>
         </arguments>
