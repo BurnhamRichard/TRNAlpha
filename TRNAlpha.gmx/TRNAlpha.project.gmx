@@ -103,6 +103,7 @@
     </scripts>
     <scripts name="Story">
       <script>scripts\scr_text.gml</script>
+      <script>scripts\scr_delete_text.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">

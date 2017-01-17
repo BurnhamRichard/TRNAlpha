@@ -169,15 +169,24 @@ draw_text(x, y, obj_bishop.weaponselect);
           <argument>
             <kind>1</kind>
             <string>///Storycontrol
-if (obj_bishop.storytext = 1) {
-    scr_text("It's a shame she won't live. But then again, who does?", 1, 500, 500);
+//if (obj_bishop.storytext = 2) {
+    //string_delete(str
     //draw_text(obj_bishop.x, obj_bishop.y, "It's a shame she won't live. But then again, who does?");
-}
+//} else {
+//}
 ///Storycontrol
-if (obj_bishop.storytext = 2) {
-    scr_text("This world... It's so full of darkness. And pain. I wonder how it got to be like this?", 1, 500, 500);
+if (obj_bishop.storytext = 1) {
+    draw_sprite(spr_bishoptalking, image_index, 122, 978);
+    scr_text("This world... It's so full of darkness. And pain. I wonder how it got to be like this?", 1, 215, 959);
     //draw_text(obj_bishop.x, obj_bishop.y, "It's a shame she won't live. But then again, who does?");
 }
+
+//if (obj_bishop.storytext = 2) {
+  //draw_set_alpha(alpha);
+//}
+  //  string_delete("This world... It's so full of darkness. And pain. I wonder how it got to be like this?", index, 47);
+//}
+
 </string>
           </argument>
         </arguments>
