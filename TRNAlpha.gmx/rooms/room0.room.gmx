@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_bishopstats" x="64" y="128" name="inst_C49857B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_requiemgate" x="1536" y="486" name="inst_39139E5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_bishop" x="288" y="916" name="inst_498100A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bishop" x="1536" y="378" name="inst_498100A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_c" x="0" y="972" name="inst_D32DB6AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_d" x="96" y="972" name="inst_9137D99F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_d" x="288" y="972" name="inst_95C0E26D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

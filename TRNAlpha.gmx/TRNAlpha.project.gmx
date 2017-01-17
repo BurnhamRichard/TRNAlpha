@@ -32,6 +32,7 @@
       <sprite>sprites\spr_gorgon_idle</sprite>
     </sprites>
     <sprites name="Bishop">
+      <sprite>sprites\spr_bishop_spawn</sprite>
       <sprite>sprites\spr_bishop_idle</sprite>
       <sprite>sprites\spr_bishop_walk</sprite>
       <sprite>sprites\spr_bishop_jump</sprite>
@@ -91,6 +92,7 @@
         <script>scripts\hurt_state_laser.gml</script>
         <script>scripts\hurt_state_laser_projectile.gml</script>
         <script>scripts\exp_state.gml</script>
+        <script>scripts\spawn_state.gml</script>
       </scripts>
     </scripts>
     <scripts name="Enemy Scripts">
