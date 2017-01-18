@@ -1,4 +1,5 @@
 //scr_text("Text",speed,x,y);
+if (obj_bishop.story = true) {
 txt = instance_create(argument2,argument3,obj_text);
 with (txt)
 {
@@ -18,4 +19,5 @@ with (txt)
     
     boxwidth = text_width + (padding*2);
     boxheight = text_height + (padding*2);
+    }
 }

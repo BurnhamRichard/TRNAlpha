@@ -52,6 +52,7 @@ depth = depth - instance_number(obj_text);
           <argument>
             <kind>1</kind>
             <string>///Render textbox &amp; text
+if (obj_bishop.story = true) {
 draw_set_alpha(alpha);
 if (alpha &lt; 1) alpha += spd/10; else alpha = 1;
 
@@ -74,6 +75,7 @@ draw_text_ext
 );
 
 draw_set_alpha(1);
+}
 </string>
           </argument>
         </arguments>
@@ -95,10 +97,12 @@ draw_set_alpha(1);
           <argument>
             <kind>1</kind>
             <string>///Add letters over time
-if (time &lt; text_length)
-{
+if (obj_bishop.story = true) {
+    if (time &lt; text_length)
+    {
     time += spd;
     print = string_copy(text,0,time)
+    }
 }
 </string>
           </argument>

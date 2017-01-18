@@ -41,6 +41,7 @@ redshield = false;
 powerselect = 1;
 maxpowerselect = 2;
 storytext = 0;
+story = false;
 //image_xscale =.1;
 //image_yscale =.1;
 </string>
