@@ -4,7 +4,7 @@ txt = instance_create(argument2,argument3,obj_text);
 with (txt)
 {
     padding = 16;
-    maxlength = 787;
+    maxlength = 770;
     text = argument0;
     spd = argument1;
     font = fnt1;
