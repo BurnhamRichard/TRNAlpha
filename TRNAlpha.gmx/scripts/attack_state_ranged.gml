@@ -5,6 +5,10 @@ vspd += grav;
 hspd = approach(hspd, 0, 2);
 //consider writing an approach script here
 //hspd = -6;
+if (obj_bishop.plasma <= 0) {
+    canshoot = false;
+}
+
 move(solid);
 sprite_index = spr_attack_ranged;
 //put alarm shiz here
@@ -14,6 +18,7 @@ alarm = 5;
 
 if (canshoot = true) {
 instance_create(x, y, obj_bullet);
+obj_bishop.plasma -= 5;
 canshoot = false;
 }
 alarm[0] = 5; 

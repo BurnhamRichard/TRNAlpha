@@ -147,6 +147,12 @@ draw_text(x, y, obj_bishop.weaponselect);
 
 draw_text(500, 500, obj_bishop.storytext)
 draw_text(500, 540, obj_bishop.story);
+///weapon power
+draw_set_font(fnt1);
+draw_set_color(c_white);
+draw_text(1156.50, 47.5, obj_bishop.plasma); 
+
+
 //}
 
 
@@ -211,6 +217,7 @@ if (obj_bishop.story = true) &amp;&amp; (alarm[0] = -1) {
 
 if (obj_bishop.storytext = 1) {
     obj_bishop.story = true;
+    //audio_play_sound(sound1, 0, false);
     draw_sprite(spr_bishoptalking, image_index, 122, 978);
     scr_text("This world... It's so full of darkness. And pain. I wonder how it got to be like this?", 1, 215, 959);
     
@@ -218,6 +225,7 @@ if (obj_bishop.storytext = 1) {
 
 if (obj_bishop.storytext = 3) {
     obj_bishop.story = true;
+    //audio_play_sound(sound1, 0, false);
     draw_sprite(spr_bishoptalking, image_index, 122, 978);
     scr_text("And it's raining. Fantastic.", 1, 215, 959);
     
@@ -225,6 +233,7 @@ if (obj_bishop.storytext = 3) {
 
 if (obj_bishop.storytext = 5) {
     obj_bishop.story = true;
+    //audio_play_sound(sound1, 1, false);
     draw_sprite(spr_bishoptalking, image_index, 122, 978);
     scr_text("The correct question is, when in the hell am I? Am I Doc or Marty? I'm going mad.", 1, 215, 959);
     

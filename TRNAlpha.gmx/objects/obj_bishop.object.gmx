@@ -42,6 +42,7 @@ powerselect = 1;
 maxpowerselect = 2;
 storytext = 0;
 story = false;
+plasma = 100;
 //image_xscale =.1;
 //image_yscale =.1;
 </string>
@@ -263,6 +264,7 @@ instance_destroy();
 //state = hurt_state_laser;
 if (redshield = false) {// and (image_xscale = -1) {
 hspd = -16;
+obj_bishopstats.hp -= 10;
 state = hurt_state_laser;
 }
 //if (redshield = false) and (image_xscale = -1) {
@@ -293,6 +295,7 @@ state = hurt_state_laser;
             <kind>1</kind>
             <string>with (other) instance_destroy();
 with (obj_bishopstats) {
+        audio_play_sound(sound1, 1, false);
         hp += 10;             
 }
 </string>
@@ -320,6 +323,7 @@ with (obj_bishopstats) {
             <string>with (other) instance_destroy();
 with (obj_bishopstats) {
         expr +=1;
+        audio_play_sound(sound0,1,0);
         if (expr &gt;= maxexpr) {
         level += 1;
         expr = expr-maxexpr;
