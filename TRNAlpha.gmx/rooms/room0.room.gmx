@@ -92,6 +92,7 @@
     <instance objName="obj_bishop_story" x="768" y="540" name="inst_3D0D00D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bishop_story" x="288" y="918" name="inst_0E1A8A5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gorgon_flight" x="480" y="897" name="inst_3AD8B68C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lighting1" x="96" y="108" name="inst_5528174C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

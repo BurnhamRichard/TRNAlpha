@@ -150,10 +150,13 @@
     </objects>
     <objects name="Gates">
       <object>objects\obj_requiemgate</object>
+      <object>objects\obj_light_carrier</object>
     </objects>
     <object>objects\obj_bishop_story</object>
     <object>objects\obj_text</object>
     <object>objects\obj_spawner</object>
+    <object>objects\obj_lighting1</object>
+    <object>objects\obj_enemylight</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
