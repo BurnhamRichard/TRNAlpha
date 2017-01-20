@@ -71,6 +71,8 @@
     <sprite>sprites\spr_bishop_redshield</sprite>
     <sprite>sprites\sprite44</sprite>
     <sprite>sprites\sprite46</sprite>
+    <sprite>sprites\spr_chest_closed</sprite>
+    <sprite>sprites\spr_chest_open</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -157,6 +159,7 @@
     <object>objects\obj_spawner</object>
     <object>objects\obj_lighting1</object>
     <object>objects\obj_enemylight</object>
+    <object>objects\obj_chest</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
