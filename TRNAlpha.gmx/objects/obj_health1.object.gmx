@@ -3,7 +3,7 @@
   <spriteName>spr_health1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-500</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,14 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = .5;
-image_xscale = .3;
-image_yscale = .3;
+            <string>//image_angle = .5;
+image_xscale = .15;
+image_yscale = .15;
 //maxhp = hp;
 spd = random(5);
 acc = 2;
-hspd = choose(random(15)) or (random(-15));
-vspd = choose(random(15)) or (random(-15));
+hspd = random_range(15, -15);
+vspd = random_range(15, -15);
 grav = 1.5;
 state = exp_state;
 </string>
@@ -57,7 +57,8 @@ state = exp_state;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>script_execute(state);
+            <string>image_angle = 1.5;
+script_execute(state);
 </string>
           </argument>
         </arguments>

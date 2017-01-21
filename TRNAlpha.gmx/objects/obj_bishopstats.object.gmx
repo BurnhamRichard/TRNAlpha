@@ -145,8 +145,8 @@ if (instance_exists(obj_gorgon_flight)) {
 draw_text(x, y, obj_bishop.weaponselect);
 }
 
-draw_text(500, 500, obj_bishop.storytext)
-draw_text(500, 540, obj_bishop.story);
+//draw_text(500, 500, obj_bishop.storytext)
+//draw_text(500, 540, obj_bishop.story);
 ///weapon power
 draw_set_font(fnt1);
 draw_set_color(c_white);

@@ -73,6 +73,8 @@
     <sprite>sprites\sprite46</sprite>
     <sprite>sprites\spr_chest_closed</sprite>
     <sprite>sprites\spr_chest_open</sprite>
+    <sprite>sprites\spr_starmap</sprite>
+    <sprite>sprites\spr_starmap_rear</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -127,6 +129,8 @@
       <object>objects\obj_health1</object>
       <object>objects\obj_bullet</object>
       <object>objects\obj_redlaser</object>
+      <object>objects\spr_starmap_back</object>
+      <object>objects\obj_starmap_rear</object>
     </objects>
     <objects name="Platforms">
       <objects name="Level 1">
@@ -160,6 +164,7 @@
     <object>objects\obj_lighting1</object>
     <object>objects\obj_enemylight</object>
     <object>objects\obj_chest</object>
+    <object>objects\obj_starmap</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
