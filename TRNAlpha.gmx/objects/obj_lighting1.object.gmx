@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-20000</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -68,19 +68,19 @@ surface_reset_target();
     //Set circles, these can be played with
     draw_set_blend_mode(bm_subtract); 
     
-    draw_set_colour(c_blue);
+    draw_set_colour(c_white);
     draw_set_alpha(0.2);
     
     //Draw circles, presume these can be squares, can adjust 30
     //assume this can be altered to obj_light as well
     with (obj_bishop) {
-        draw_circle(x + random_range(-4, 4), y + random_range(-4, 4), 100 + random_range(-4, 4), false);
+        draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 50 + random_range(-4, 4), false);
     }
     
-    draw_set_colour(c_navy);
+    draw_set_colour(c_white);
     draw_set_alpha(1);
     with (obj_bishop) {
-        draw_circle(x + random_range(-4, 4), y + random_range(-4, 4), 90 + random_range(-4, 4), false);
+        draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 25 + random_range(-4, 4), false);
     }
     //Reset all set draw, means other objects with draw objects are overidden
     draw_set_blend_mode(bm_normal);

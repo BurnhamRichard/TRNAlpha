@@ -75,9 +75,16 @@
     <sprite>sprites\spr_chest_open</sprite>
     <sprite>sprites\spr_starmap</sprite>
     <sprite>sprites\spr_starmap_rear</sprite>
+    <sprite>sprites\spr_citadel_supergate</sprite>
+    <sprite>sprites\spr_citadel_A</sprite>
+    <sprite>sprites\spr_citadel_B</sprite>
+    <sprite>sprites\spr_citael_C</sprite>
+    <sprite>sprites\spr_citadel_panel_A</sprite>
+    <sprite>sprites\spr_citadel_window_A</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
+    <background>background\citadel_stars</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -141,6 +148,7 @@
         <object>objects\obj_block_d</object>
         <object>objects\solid</object>
         <object>objects\spr_intersection</object>
+        <object>objects\obj_citadel_gateseat</object>
         <object>objects\object20</object>
       </objects>
     </objects>
@@ -165,9 +173,18 @@
     <object>objects\obj_enemylight</object>
     <object>objects\obj_chest</object>
     <object>objects\obj_starmap</object>
+    <object>objects\obj_citadel_supergate</object>
+    <object>objects\obj_citadel_A</object>
+    <object>objects\obj_citadel_B</object>
+    <object>objects\obj_citadel_C</object>
+    <object>objects\obj_citadel_panel</object>
+    <object>objects\obj_citadel_window</object>
+    <object>objects\obj_light</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

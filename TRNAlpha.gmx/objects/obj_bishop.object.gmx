@@ -116,12 +116,40 @@ plasma = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//size = 128; //size of light
-//draw_set_blend_mode(bm_subtract);
-//surface_set_target(light);
-//draw_ellipse_color(x-size /2 - view_xview,y-size/2-view_yview,x+size/2-view_xview,y+size/2-view_yview, c_blue, c_black, false);
-//surface_reset_target();
-//draw_set_blend_mode(bm_normal);
+            <string>size = random_range(280, 300); //size of light
+draw_set_blend_mode(bm_subtract);
+surface_set_target(light);
+draw_ellipse_color(x-size /2 - view_xview,y-size/2-view_yview,x+size/2-view_xview,y+size/2-view_yview, c_white, c_black, false);
+surface_reset_target();
+draw_set_blend_mode(bm_normal);
+
+size = random_range(180, 200); //size of light
+draw_set_blend_mode(bm_subtract);
+surface_set_target(light);
+draw_ellipse_color(x-size /2 - view_xview,y-size/2-view_yview,x+size/2-view_xview,y+size/2-view_yview, c_white, c_black, false);
+surface_reset_target();
+draw_set_blend_mode(bm_normal);
+
+
+//with (obj_bishop) {
+        draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 50 + random_range(-4, 4), false);
+   // }
+    
+    draw_set_colour(c_white);
+    draw_set_alpha(1);
+    with (obj_bishop) {
+        draw_circle(x + random_range(-1, 1), y + random_range(-1, 1), 25 + random_range(-4, 4), false);
+   // }
+    //Reset all set draw, means other objects with draw objects are overidden
+    draw_set_blend_mode(bm_normal);
+    draw_set_alpha(1);
+    surface_reset_target();
+//} else { 
+   // surf = surface_create(room_width, room_height);
+   // surface_set_target(surf);
+   // draw_clear_alpha(c_black, 0);
+  //  surface_reset_target();
+}
 </string>
           </argument>
         </arguments>
@@ -174,6 +202,9 @@ if (powerselect = 1) {
     redshield = true;
 } else { 
     redshield = false; 
+}
+if (obj_bishopstats.hp &lt;= 0) {
+    room_restart();
 }
 
 </string>
@@ -475,6 +506,22 @@ room_restart();
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="74">
+      <action>
+        <libid>1</libid>
+        <id>222</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_next_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>
