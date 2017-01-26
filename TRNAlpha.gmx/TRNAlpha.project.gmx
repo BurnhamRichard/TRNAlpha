@@ -29,6 +29,7 @@
       <sprite>sprites\spr_redshield</sprite>
       <sprite>sprites\spr_352ad</sprite>
       <sprite>sprites\spr_redlaser</sprite>
+      <sprite>sprites\spr_clouds</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_gorgon_attack</sprite>
@@ -85,6 +86,9 @@
   <backgrounds name="background">
     <background>background\bck_desert</background>
     <background>background\citadel_stars</background>
+    <background>background\clouds</background>
+    <background>background\background3</background>
+    <background>background\background4</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -180,6 +184,7 @@
     <object>objects\obj_citadel_panel</object>
     <object>objects\obj_citadel_window</object>
     <object>objects\obj_light</object>
+    <object>objects\obj_clouds</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
