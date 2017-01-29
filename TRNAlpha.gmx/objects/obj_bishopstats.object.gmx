@@ -34,6 +34,7 @@ expr = 0;
 maxexpr = 10; 
 level = 1;
 attack = 1;
+audio_play_sound(snd_risingentropy, 1, true);
 </string>
           </argument>
         </arguments>

@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\sound0</sound>
     <sound>sound\sound1</sound>
+    <sound>sound\snd_risingentropy</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="GUI">
@@ -54,7 +55,14 @@
         <sprite>sprites\spr_block_d</sprite>
       </sprites>
       <sprites name="V2">
-        <sprite>sprites\sprite36</sprite>
+        <sprite>sprites\spr_lv1_E</sprite>
+        <sprite>sprites\spr_lv1_D</sprite>
+        <sprite>sprites\spr_lv1_Y</sprite>
+        <sprite>sprites\spr_lv1_Z</sprite>
+        <sprite>sprites\spr_lv1_X</sprite>
+        <sprite>sprites\spr_lv1_B</sprite>
+        <sprite>sprites\spr_lv1_C</sprite>
+        <sprite>sprites\spr_lv1_A</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_HUDV2</sprite>
@@ -82,6 +90,7 @@
     <sprite>sprites\spr_citael_C</sprite>
     <sprite>sprites\spr_citadel_panel_A</sprite>
     <sprite>sprites\spr_citadel_window_A</sprite>
+    <sprite>sprites\sprite67</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bck_desert</background>
@@ -154,6 +163,16 @@
         <object>objects\spr_intersection</object>
         <object>objects\obj_citadel_gateseat</object>
         <object>objects\object20</object>
+        <objects name="Level1 v2">
+          <object>objects\obj_lv1_D</object>
+          <object>objects\obj_lv1_E</object>
+          <object>objects\obj_lv1_Y</object>
+          <object>objects\obj_lv1_Z</object>
+          <object>objects\obj_lv1_X</object>
+          <object>objects\obj_lv1_B</object>
+          <object>objects\obj_lv1_C</object>
+          <object>objects\obj_lv1_A</object>
+        </objects>
       </objects>
     </objects>
     <objects name="Bishop">
